@@ -1,0 +1,113 @@
+/* ==========================================================================
+Styles for Button component
+========================================================================== */
+
+// import mixin and variables
+@import "../../../assets/styles/helper/function",
+  "../../../assets/styles/helper/mixin",
+  "../../../assets/styles/project/init/variables";
+
+// Start styles Button component
+
+.a-button {
+    display: inline-block;
+    outline: 0;
+    text-align: center;
+    min-width: 200px;
+    min-height: 48px;
+    padding: 7px 31px;
+    font-size: fz(button-default);
+    font-weight: fw(reguler);
+    line-height: lh(button-default);
+    letter-spacing: 0.12px;
+    border: solid 2px color(grey, 50);
+    background-color: color(grey, 50);
+    color: color(white);
+    border-radius: 20rem;
+    transition: all 0.25s ease;
+    text-decoration: none;
+    cursor: pointer;
+
+    @include active-visited-target-blank-button {
+        border: solid 1px color(grey, 50);
+        background-color: color(grey, 50);
+        color: color(white);
+    }
+    @include hover-button("default");
+    @include small {
+        font-size: fz(mbutton-default);
+        line-height: lh(mbutton-default);
+        min-width: 100%;
+        min-height: 40px;
+        padding: 3px 31px 3px;
+    }
+    &.primary {
+        color: color(white);
+        background-color: color(orange,100);
+        border-color: color(orange,100);
+        @include active-visited-target-blank-button {
+            background-color: color(orange, 100);
+            border-color: color(orange, 100);
+        }
+        @include hover-button("primary");
+        @media (hover: none) {
+            &:hover {
+              background-color: color(orange, 100);
+              border-color: color(orange, 100);
+            }
+            &:active {
+              background-color: color(orange, 120);
+              border-color: color(orange, 120);
+            }
+        }
+    }
+    &.inactive-primary {
+        color: #C7CCD1;
+        background-color: #F8F7F7;
+        cursor: not-allowed;
+        pointer-events: none;
+        border-color: transparent;
+    }
+
+    &.transparent{
+      background-color: Transparent;
+      border-color: color(orange,100);
+      color: black;
+      background-repeat:no-repeat;
+      // border: none;
+      cursor:pointer;
+      overflow: hidden;
+      outline:none;
+      text-align: left;
+      left: 0;
+    }
+
+    &.secondary {
+        color: color(orange, 100);
+        background-color: transparent;
+        border-color: color(orange, 100);
+        &:focus {
+            border-style:solid !important;
+            border-width: 1px !important;
+            border-radius: 20rem !important;
+        }
+        @include active-visited-target-blank-button {
+            color: color(orange, 100);
+            background-color: transparent;
+            border-color: color(primary, 100);
+        }
+        @include hover-button("secondary");
+        @media (hover: none) {
+            &:hover {
+                background-color: transparent;
+                border-color: color(orange, 100);
+                color: color(orange, 100);
+            }
+            &:active {
+                background-color: color(orange, 75);
+                color: color(white);
+                border-color: color(orange, 75);
+            }
+        }
+    }
+}

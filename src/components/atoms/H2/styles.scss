@@ -1,0 +1,43 @@
+/* ==========================================================================
+Styles for H2 component
+========================================================================== */
+
+// import mixin and variables
+@import "../../../assets/styles/helper/function",
+"../../../assets/styles/helper/mixin",
+"../../../assets/styles/project/init/variables";
+
+// Start styles H2 component
+.a-h2 {
+    font-size: fz(h2);
+    line-height: lh(lmh2);
+    @include font-weight-heading;
+    @include colors-all-font;
+    @include small {
+        font-size: fz(mh2);
+        line-height: lh(lmh2);
+    }
+    &.black {
+        color: color(black) !important;
+    }
+
+    &.orange {
+      color: orange !important;
+    }
+
+    &.light {
+      font-weight: 200;
+    }
+
+    &.error {
+        color: #E93C3C !important;
+    }
+
+    &.bold {
+        font-weight: 600;
+    }
+
+    &.success {
+      color: #1AB759 !important;
+    }
+}

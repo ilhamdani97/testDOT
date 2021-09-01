@@ -1,0 +1,66 @@
+/* ==========================================================================
+   FONTS
+   ========================================================================== */
+
+// Poppins-Regular
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../../fonts/poppins-regular.eot');
+    src: url('../../../fonts/poppins-regular.eot?#iefix') format('embedded-opentype'),
+        url('../../../fonts/poppins-regular.woff2') format('woff2'),
+        url('../../../fonts/poppins-regular.woff') format('woff'),
+        url('../../../fonts/poppins-regular.ttf') format('truetype'),
+        url('../../../fonts/poppins-regular.svg#poppins-regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../../fonts/poppins-bold.eot');
+    src: url('../../../fonts/poppins-bold.eot?#iefix') format('embedded-opentype'),
+        url('../../../fonts/poppins-bold.woff2') format('woff2'),
+        url('../../../fonts/poppins-bold.woff') format('woff'),
+        url('../../../fonts/poppins-bold.ttf') format('truetype'),
+        url('../../../fonts/poppins-bold.svg#poppins-bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../../fonts/poppins-light.eot');
+    src: url('../../../fonts/poppins-light.eot?#iefix') format('embedded-opentype'),
+        url('../../../fonts/poppins-light.woff2') format('woff2'),
+        url('../../../fonts/poppins-light.woff') format('woff'),
+        url('../../../fonts/poppins-light.ttf') format('truetype'),
+        url('../../../fonts/poppins-light.svg#poppins-light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../../fonts/poppins-black.eot');
+    src: url('../../../fonts/poppins-black.eot?#iefix') format('embedded-opentype'),
+        url('../../../fonts/poppins-black.woff2') format('woff2'),
+        url('../../../fonts/poppins-black.woff') format('woff'),
+        url('../../../fonts/poppins-black.ttf') format('truetype'),
+        url('../../../fonts/poppins-black.svg#poppins-black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+// Fontello
+@font-face {
+   font-family: 'bri-icon';
+   src: url('../../../fonts/bri-icon.eot?32975909');
+   src: url('../../../fonts/bri-icon.eot?32975909#iefix') format('embedded-opentype'),
+        url('../../../fonts/bri-icon.woff2?32975909') format('woff2'),
+        url('../../../fonts/bri-icon.woff?32975909') format('woff'),
+        url('../../../fonts/bri-icon.ttf?32975909') format('truetype'),
+        url('../../../fonts/bri-icon.svg?32975909#permata-icon') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
